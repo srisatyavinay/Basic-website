@@ -1,0 +1,351 @@
+/* For Entire body of all pages */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #3aff93;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* css for navigation bar and the sticky class which will be added by javascript */
+.navigation {
+    overflow: auto;
+    background: #1f5226;
+    width: 100%;
+}
+
+.navigation a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: #EDF5E1;
+}
+
+.navigation a.active {
+    background: #F76C6C;
+    color: #00aa17;
+}
+
+.navigation a.bars {
+    display: none;
+}
+
+.navigation a.cancel {
+    display: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.sticky + .first {
+    padding-top: 60px;
+    margin-top: 80px;
+}
+
+/* css for the home page */
+
+.header {
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.first {
+    margin-top: 40px;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    padding-top: 60px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    background: rgb(60, 216, 68);
+}
+
+.first:hover {
+    background: rgb(22, 238, 69);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* css for profile image and changing image */
+
+.myimage {
+    max-width: 25%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* css for for about me page */
+
+.firstabout {
+    margin-top: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    background: rgb(60, 216, 68);
+}
+
+.firstabout:hover {
+    background: rgb(22, 238, 69);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* css for footer */
+
+.footer {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #1f5226;
+    text-align: center;
+    color: rgb(228, 228, 228);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer a {
+    margin: 10px;
+}
+
+/* css for social media icons */
+
+.social {
+    color: cornsilk;
+    font-size: 18px;
+}
+
+.social:hover {
+    color: rgb(66, 103, 178);
+}
+
+.phone:hover {
+    color: rgb(30, 146, 255);
+}
+
+.address:hover {
+    color: rgb(245, 205, 255);
+}
+
+.facebook:hover {
+    color: rgb(66, 103, 178);
+}
+
+.twitter:hover {
+    color: rgb(29, 161, 242);
+}
+
+.instagram:hover {
+    color: rgb(251, 173, 80);
+}
+
+.mail:hover {
+    color: rgb(29, 161, 242);
+}
+
+.github:hover {
+    color: rgb(250, 250, 250)
+}
+
+/* css media query to add responsiveness to the page when viewed in small screens */
+
+@media screen and (max-width: 900px) {
+    .navigation a:not(.active) {display: none;}
+    .navigation a.bars {
+      float: right;
+      display: block;
+    }
+}
+  
+  /* The "responsive" class is added to the navigation with JavaScript when the user clicks on the bars. This class makes the navigation look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 900px) {
+    .navigation.responsive {position: fixed;}
+    .navigation.responsive a.cancel {
+        float: right;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navigation.responsive a:not(.bars) {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .navigation.responsive a.bars {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .secondgallery {
+      flex-direction: column;
+    }
+}
+
+/* css for the table in about me page */
+
+.tableabout {
+    overflow-x:auto;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    background: rgb(60, 216, 68);
+}
+
+.tableabout:hover {
+    background: rgb(22, 238, 69);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tableabout th {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.tableabout td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+/* css for the gallery page */
+
+.secondgallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-end;
+    
+}
+
+.flex-items {
+    flex: 50%;
+}
+
+.aligncenter {
+    text-align: center;
+    font-size: large;
+}
+
+.sgallery {
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    background: rgb(60, 216, 68);
+}
+
+.sgallery:hover {
+    background: rgb(22, 238, 69);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fleximage {
+    max-width: 75%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* css for the form page */
+
+.formdiv {
+    overflow-x:auto;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    background: rgb(60, 216, 68);
+
+}
+
+.formdiv:hover {
+    background: rgb(22, 238, 69);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.forminput {
+    min-width: 200px;
+}
+
+.formelement {
+    width: 50%;
+}
+
+/* css for the results of form filled */
+
+.formresults {
+    min-width: 500px;
+    text-align: center;
+    padding: 0px;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.formresults thead {
+    background-image: linear-gradient(to right, rgb(255, 253, 117), rgb(57, 247, 199));
+}
+
+.formresults tbody {
+    background-image: linear-gradient(to right, rgb(255, 139, 72), rgb(121, 130, 255));
+}
+
+.formresults th{
+    padding: 0px;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.formresults td{
+    padding: 0px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/* css for table in contact me */
+
+.table {
+    max-width: 600px;
+}
+
+/* css for select element in form */
+select:invalid {
+    color: gray;
+}
+option[value=""][disabled] {
+    display: none;
+}
+option {
+    color: black;
+}

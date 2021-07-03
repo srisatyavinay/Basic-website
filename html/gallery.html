@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venneti Sri Satya Vinay</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- To load pacifico font -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- To load icons in the navigation menu and footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div class="navigation" id="navmenu">
+        <a href="index.html" onmouseover="changeonhover(this)" onmouseout="changeonleave(this)"><i class="fas fa-home">&nbsp;</i>  Home</a>
+        <a href="about.html" onmouseover="changeonhover(this)" onmouseout="changeonleave(this)"><i class="fas fa-info">&nbsp;</i>  About me</a>
+        <a href="#" class="active" onmouseover="changeonhover(this)" onmouseout="changeonleave(this)"><i class="fas fa-images">&nbsp;</i>  Gallery</a>
+        <a href="achievements.html" onmouseover="changeonhover(this)" onmouseout="changeonleave(this)"><i class="fas fa-trophy">&nbsp;</i>  Achievements</a>
+        <a href="contact.html" onmouseover="changeonhover(this)" onmouseout="changeonleave(this)"><i class="fas fa-envelope">&nbsp;</i>  Contact me</a>
+        <a href="form.html" onmouseover="changeonhover(this)" onmouseout="changeonleave(this)"><i class="fas fa-edit"></i>&nbsp;</i>  Form</a>
+        <a href="javascript:void(0);" class="bars" id="icon1" onclick="showmenu()" onmouseover="changeonhover(this)" onmouseout="changeonleave(this)"><i class="fas fa-bars"></i></a>
+        <a href="javascript:void(0);" class="cancel" id="icon2" onclick="hidemenu()" onmouseover="changeonhover(this)" onmouseout="changeonleave(this)"><i class="fas fa-times"></i></a>
+    </div>
+    <div class="firstabout">
+        <h3>Places I visited in Delhi and it's surroundings</h3>
+        <p>I like travelling a lot as you can see below it is one of my hobbies. In my childhood I visited Delhi once and these are the places I visited</p>
+        <img src="../img/image1.jpg" alt="Changing image" id="changingimage" class="myimage" onclick="changeimage()" title="Changing image">
+        <p id="changingline" style="text-align: center;">India Gate</p>
+        <p>You can see only one image above. Click on it to see other photos. There will be five in total and you will return to the first image after clicking the fifth image</p>
+    </div>
+    <div class="sgallery">
+        <h3>My hobbies</h3>
+        <div class="secondgallery">
+            <div class="flex-items">
+                <img src="https://cdn.britannica.com/66/162466-131-47ADB66F/Man-butterfly-stroke-pool.jpg" alt="Swimmimg image" class="fleximage" title="swimming">
+                <p class="aligncenter">Swimming</p>
+            </div>
+            <div class="flex-items">
+                <img src="https://www.lehighcenter.com/wp-content/uploads/2020/08/popcorn.jpg" alt="watching movies image" class="fleximage" title="watching movies">
+                <p class="aligncenter">Watching movies</p>
+            </div>
+            <div class="flex-items">
+                <img src="https://www.verywellmind.com/thmb/Jw9c1_UYboMqAw0qTXkmLim82zA=/900x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/guy-with-headphones-on-relaxes-listening-to-music-556565323-58a1ef1d3df78c4758681b64.jpg" alt="Listening to music image" class="fleximage" title="Listening to music">
+                <p class="aligncenter">Listening to music</p>
+            </div>
+            <div class="flex-items">
+                <img src="https://lp-cms-production.imgix.net/features/2019/05/Solo-Travel-in-Nature-acbfea52bfaf.jpg?auto=format&fit=crop&sharp=10&vib=20&ixlib=react-8.6.4&w=850&q=75&dpr=1" alt="Travelling image" class="fleximage" title="travelling">
+                <p class="aligncenter">Travelling</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div>
+        <span>Contact me:</span>
+        <a href="https://www.facebook.com/srisatyavinay/" target="_blank" title="facebook"><i class="fab fa-facebook-f social facebook"></i></a>
+        <a href="https://www.instagram.com/srisatyavinay/" target="_blank" title="instagram"><i class="fab fa-instagram social instagram"></i></a>
+        <a href="https://twitter.com/srisatyavinay" target="_blank" title="twitter"><i class="fab fa-twitter social twitter"></i></a>
+        <a href="mailto:sri.satya@students.iiit.ac.in" title="Mail"><i class="far fa-envelope social mail"></i></a>
+        <a href="https://github.com/srisatyavinay" target="_blank" title="github"><i class="fab fa-github social github"></i></a>
+        </div>
+        <div>Copyright &copy; Venneti Sri Satya Vinay 2021</div>
+    </footer>
+    <script src="../js/script1.js"></script>
+</body>
+</html>

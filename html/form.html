@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venneti Sri Satya Vinay</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- To load pacifico font -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- To load icons in the navigation menu and footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!-- To load sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <div class="navigation" id="navmenu">
+        <a href="index.html" onmouseover="changeonhover(this)" onmouseout="changeonleave(this)"><i class="fas fa-home">&nbsp;</i>  Home</a>
+        <a href="about.html" onmouseover="changeonhover(this)" onmouseout="changeonleave(this)"><i class="fas fa-info">&nbsp;</i>  About me</a>
+        <a href="gallery.html" onmouseover="changeonhover(this)" onmouseout="changeonleave(this)"><i class="fas fa-images">&nbsp;</i>  Gallery</a>
+        <a href="achievements.html" onmouseover="changeonhover(this)" onmouseout="changeonleave(this)"><i class="fas fa-trophy">&nbsp;</i>  Achievements</a>
+        <a href="contact.html" onmouseover="changeonhover(this)" onmouseout="changeonleave(this)"><i class="fas fa-envelope">&nbsp;</i>  Contact me</a>
+        <a href="#" class="active" onmouseover="changeonhover(this)" onmouseout="changeonleave(this)"><i class="fas fa-edit"></i>&nbsp;</i>  Form</a>
+        <a href="javascript:void(0);" class="bars" id="icon1" onclick="showmenu()" onmouseover="changeonhover(this)" onmouseout="changeonleave(this)"><i class="fas fa-bars"></i></a>
+        <a href="javascript:void(0);" class="cancel" id="icon2" onclick="hidemenu()" onmouseover="changeonhover(this)" onmouseout="changeonleave(this)"><i class="fas fa-times"></i></a>
+    </div>
+
+    <div class="formdiv">
+        <h3>Please fill this form</h3>
+        <p>Please fill your name, skill you noticed in me and give it a rating and submit it.</p>
+        <form name="myform" id="forms" method="post" onsubmit="return readform()">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="formelement">
+                            <label for="formname">Name:&nbsp;&nbsp;</label>
+                        </td>
+                        <td class="formelement">
+                            <input type="text" id="formname" name="formname" placeholder="Enter your name" required class="forminput">
+                        </td>
+                    </tr>
+                        <td class="formelement">
+                            <label for="formskill">Skills:&nbsp;&nbsp;</label>
+                        </td>
+                        <td class="formelement">
+                            <input type="text" id="formskill" class="forminput" name="forminput" placeholder="Enter my skills you noticed" required >
+                        </td>
+                    <tr>
+                        <td class="formelement">
+                            <label for="formlevel">Level:&nbsp;&nbsp;</label>
+                        </td>
+                        <td class="formelement">
+                            <select id="formlevel" name="formlevel" class="forminput" required>
+                                <option value="" disabled selected>Select something...</option>
+                                <option value="Proficient">Proficient</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Beginner">Beginner</option>
+                              </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="formelement">
+                            <input type="submit" value="Submit">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+    <div class="formdiv">
+        <h3>Form results</h3>
+        <table class="formresults">
+            <thead>
+                <tr>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Skills
+                    </th>
+                    <th>
+                        Level
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="formbody">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <footer class="footer">
+        <div>
+        <span>Contact me:</span>
+        <a href="https://www.facebook.com/srisatyavinay/" target="_blank" title="facebook"><i class="fab fa-facebook-f social facebook"></i></a>
+        <a href="https://www.instagram.com/srisatyavinay/" target="_blank" title="instagram"><i class="fab fa-instagram social instagram"></i></a>
+        <a href="https://twitter.com/srisatyavinay" target="_blank" title="twitter"><i class="fab fa-twitter social twitter"></i></a>
+        <a href="mailto:sri.satya@students.iiit.ac.in" title="Mail"><i class="far fa-envelope social mail"></i></a>
+        <a href="https://github.com/srisatyavinay" target="_blank" title="github"><i class="fab fa-github social github"></i></a>
+        </div>
+        <div>Copyright &copy; Venneti Sri Satya Vinay 2021</div>
+    </footer>
+    <script src="../js/script1.js"></script>
+</body>
+</html>
