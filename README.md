@@ -5,4 +5,4 @@ This website is created as part of <abbr title = "Introduction to Software Syste
 
 Created in July, 2021
 
-To check merge conflicts
+To practice merge conflicts
